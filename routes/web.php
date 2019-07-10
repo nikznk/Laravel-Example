@@ -11,34 +11,8 @@
 |
 */
 Route::get('/', 'PagesController@home');
+Route::get('/about', 'PagesController@about');
+Route::get('/contact', 'PagesController@contact');
 
-// Route::get('/', function () {
-//     $tasks = [
-//         'Hello',
-//          'i am',
-//          'Groot'    
-//     ];
 
-//     // return view('welcome',[
-//     //     'tasks' => $tasks
-//     // ]);
-//     // return view('welcome')->withTasks($tasks);  
-//     // return view('welcome')->withTasks([
-//     // 'Hello',
-//     // 'i am',
-//     // 'Groot'   ]);  
-//     return view('welcome')->with([
-//         'tasks' => [ 'Hello',
-//         'i am',
-//         'Groot' ] ]);  
-
-// });
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
+ 
